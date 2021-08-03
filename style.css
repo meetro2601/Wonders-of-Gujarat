@@ -1,0 +1,77 @@
+body{
+    height: 100vh;
+    width: 100vw;
+}
+.img-opac{
+    opacity: 0.5;
+}
+.bg-header{
+    background-color:rgba(138,66,100,0.9);
+}
+.bg-footer{
+    background-color: rgba(47, 79, 79, 0.3);
+}
+.font-nav{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.font-head{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text-col{
+    color:rgb(2, 30, 41);
+}
+.font-para{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.text-justify{
+    text-align: justify;
+}
+.bground-img{
+    background-image: url(./HomeImg/great-rann.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    border-radius: 0.8rem;
+  
+    opacity: 0.7;
+    width: 100vw;
+    height:30em;
+    
+    animation-name: img;
+    animation-duration:20s;
+    animation-iteration-count:infinite;
+    animation-timing-function:ease;
+    animation-fill-mode:backwards;
+
+}
+@keyframes img {
+    0%{
+        background-image: url(./HomeImg/great-rann.jpg);
+    }
+    25%{
+        background-image: url(./HomeImg/KITES.jpeg);
+    }
+    50%{
+        background-image: url(./HomeImg/temple.jpg);
+    }
+    75%{
+        background-image: url(./HomeImg/RIVER.jpg);
+    }
+    100%{
+        background-image: url(./HomeImg/great-rann.jpg);
+    }
+}
+.bgradient{
+    background-image: linear-gradient(90deg,#363537,#e1b07e);
+}
+.bg-layer{
+    background-color: black;
+    opacity: 0.5;
+}
+.modalcontainer {
+    position: fixed;
+    top: 0%;
+    left:35%;
+    width:auto;
+    display: none;
+}

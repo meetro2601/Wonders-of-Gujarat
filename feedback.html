@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback-WOG</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="Bootstrap-5.0.2/css/bootstrap.css">
+    <link rel="stylesheet" href="Bootstrap-5.0.2/css/bootstrap-utilities.css">
+</head>
+
+<body>
+    <div class="container-fluid m-0 p-0">
+        <!-- --------------------Navbar -------------------------- -->
+        <header id="home" class="d-flex flex-wrap align-items-center justify-content-center 
+          justify-content-md-between py-3 mb-4 border-bottom bgradient">
+            <a href="/"
+                class="d-flex align-items-center text-center col-md-3 mb-2 ms-4 mb-md-0 text-dark text-decoration-none">
+                <img src="./HomeImg/80x80.png" class="bi me-2 rounded-circle" width="75px" alt="logo">
+                <h5 class="px-3 text-warning font-nav fw-bold">WONDERS OF GUJARAT</h5>
+            </a>
+            <ul class="nav nav-pills col-12 col-md-auto justify-content-center mb-md-0 mb-3 mx-4">
+                <li class="nav-item mx-2"><a href="home.html" class="nav-link px-2 link-secondary text-white">Home</a>
+                </li>
+                <li class="nav-item mx-2"><a href="about.html" class="nav-link px-2 link-dark text-white">About</a>
+                </li>
+                <li class="nav-item mx-2"><a href="places.html" class="nav-link px-2 link-dark text-white">Places to
+                        Visit</a></li>
+                <li class="nav-item mx-2"><a href="#feedback"
+                        class="nav-link px-2 link-dark active text-white">Feedback</a>
+                </li>
+            </ul>
+            <div class="col-lg-3 col-12 text-center">
+                <button type="button" class="btn-sm btn-outline-danger me-2" id="admin">Admin Login</button>
+                <button type="button" class="btn-sm btn-outline-success" id="user">User Sign-in</button>
+            </div>
+        </header>
+        <!-- --------------------- Form ------------------------- -->
+        <main>
+            <section>
+                <div class="container my-4">
+                    <h3 class="display-6 fw-bold text-center text-danger py-3">Visitor Feedback</h3>
+                    <p class="text-justify my-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus,
+                        earum unde? Explicabo exercitationem placeat officia quam cumque ipsum eius, deleniti quo ea
+                        aliquid eos animi.</p>
+                </div>
+                <form>
+                    <div class="container">
+                        <div class="row my-3 py-2">
+                            <div class="col-md-6 my-3">
+                                <label for="name" class="form-label">Enter Name</label>
+                                <input type="text" class="form-control" placeholder="Your Name" name="name" id="name">
+                            </div>
+                            <div class="col-md-6 my-3">
+                                <label for="email" class="form-label">Enter Email</label>
+                                <input type="email" class="form-control" placeholder="Your Email-Id" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="row my-3 py-2">
+                            <label for="radiobuttons" class="form-label">Where are you from?</label>
+        
+                            <div class="col-md-4 py-2">
+                                <input type="radio" name="location" id="radio1" required>
+                                <label for="radio1" class="px-1 form-label">Gujarat</label>
+                            </div>
+                            <div class="col-md-4 py-2">
+                                <input type="radio" name="location" id="radio2">
+                                <label for="radio2" class="px-1 form-label">Outside Gujarat</label>
+                            </div>
+                            <div class="col-md-4 py-2">
+                                <input type="radio" name="location" id="radio3">
+                                <label for="radio3" class="px-1 form-label">Foreigner</label>
+                            </div>
+                        </div>
+                        <div class="row my-3 py-2">
+                            <label for="radio_buttons" class="form-label">Are you visiting Gujarat for a first
+                                time?</label>
+        
+                            <div class="col-4 py-2">
+                                <input type="radio" name="visit" id="yes" required>
+                                <label for="yes" class="form-label">Yes</label>
+                            </div>
+                            <div class="col-4 py-2">
+                                <input type="radio" name="visit" id="no">
+                                <label for="no" class="form-label">No</label>
+                            </div>
+                        </div>
+                        <div class="row my-3 py-2">
+                            <label for="radio_buttons" class="form-label">Which places you have visited from below?</label>
+                            <div class="col-md-4 col-6 py-2">
+                                <input type="checkbox" name="places" id="place1" required>
+                                <label for="place1" class="form-label">Place 1</label>
+                            </div>
+        
+                            <div class="col-md-4 col-6 py-2">
+                                <input type="checkbox" name="places" id="place2">
+                                <label for="place2" class="form-label">Place 2</label>
+                            </div>
+                            <div class="col-md-4 col-6 py-2">
+                                <input type="checkbox" name="places" id="place3">
+                                <label for="place3" class="form-label">Place 3</label>
+                            </div>
+                            <div class="col-md-4 col-6 py-2">
+                                <input type="checkbox" name="places" id="place4">
+                                <label for="place4" class="form-label">Place 4</label>
+                            </div>
+                            <div class="col-md-4 col-6 py-2">
+                                <input type="checkbox" name="places" id="place5">
+                                <label for="place5" class="form-label">Place 5</label>
+                            </div>
+                            <div class="col-md-4 col-6 py-2">
+                                <input type="checkbox" name="places" id="place6">
+                                <label for="place6" class="form-label">Place 6</label>
+                            </div>
+                            <div class="col-md-4 col-6 py-2">
+                                <input type="checkbox" name="places" id="place7">
+                                <label for="place7" class="form-label">Place 7</label>
+                            </div>
+                            <div class="col-md-4 col-6 py-2">
+                                <input type="checkbox" name="places" id="place8">
+                                <label for="place8" class="form-label">Place 8</label>
+                            </div>
+                            <div class="col-md-4 col-6 py-2">
+                                <input type="checkbox" name="places" id="other">
+                                <label for="other" class="form-label">Others</label>
+                            </div>
+                        </div>
+                        <div class="row my-3 py-2">
+                            <textarea name="visitorInput" id="visitorInput" cols="50" rows="5"
+                                placeholder=" Write your experience while visiting " class="form-control"></textarea>
+                        </div>
+                        <div class="row my-3 py-2">
+                            <label for="radio_buttons" class="d-block form-label">Have this website helped you in knowing more
+                                about
+                                Wonders of Gujarat?</label>
+                            <div class="col-4 py-2">
+                                <input type="radio" name="websitehelp" id="_yes" checked>
+                                <label for="_yes" class="form-label">Yes</label>
+                            </div>
+                            <div class="col-4 py-2">
+                                <input type="radio" name="websitehelp" id="_no">
+                                <label for="_no" class="form-label">No</label>
+                            </div>
+                        </div>
+                        <div class="row col-6 offset-3 my-3 py-2">
+                            <button class="btn btn-outline-primary rounded-pill">Submit Feedback</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <!-- --------------------- footer ------------------------ -->
+        <footer class="footer text-center bg-footer text-dark mt-5">
+            <p class="m-0 py-2">Copyright&copy;Meet Rojivadiya-2021</p>
+        </footer>
+    </div>
+
+<!-- ------------------------------ Modal ----------------------------- -->
+<div class="position-fixed top-0 left-0 bg-layer invisible h-100 w-100" id="layer"></div>
+<div class="modalcontainer" id="modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-light">
+            <div class="modal-body">
+                <form action="" class="d-flex flex-column">
+                    <label class="p-1 m-1" for="_name">Enter Your Name
+                        <input type="text" class="d-inline-block form-control" name="name" id="_name" placeholder="Name">
+                    </label>
+                    <label class="p-1 m-1" for="mail">Enter Your E-mail
+                        <input type="email" class="d-inline-block form-control" name="mail" id="mail"
+                            placeholder="Email Id">
+                    </label>
+                    <label class="p-1 m-1" for="password">Enter Password
+                        <input type="password" class="d-inline-block form-control" name="password" id="password"
+                            placeholder="Password">
+                    </label>
+                    <label class="p-1 m-1" for="_password">Confirm Password
+                        <input type="password" class="d-inline-block form-control" name="password" id="_password"
+                            placeholder="Password">
+                    </label>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-primary SignUp">Sign-Up</button>
+                <button type="button" class="btn btn-secondary cancel" data-bs-dismiss="modal">Cancel</button>
+                <div class="col-8 text-center my-4"><a href="#">Click Here for Sign-In</a></div>
+            </div>
+        </div>
+    </div>
+</div>    
+</body>
+<script>
+/* ----------------------- Modal Javascript ---------------------------- */
+    let userBtn = document.querySelector('#user')
+    let cancelBtn=document.querySelector('.cancel')
+    let signUpmodal=document.querySelector('#modal')
+    let layer=document.querySelector('#layer')
+
+    function open(){
+        signUpmodal.classList.add('d-block')
+        layer.classList.remove('invisible')
+    }
+    userBtn.addEventListener('click',open)
+
+    function close(){
+        signUpmodal.classList.remove('d-block')
+        layer.classList.add('invisible')
+    }
+    cancelBtn.addEventListener('click',close)
+    layer.addEventListener('click',close)
+
+</script>
+</html>
