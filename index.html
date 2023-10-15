@@ -11,14 +11,14 @@
   <title>Wonders of Gujarat</title>
 </head>
 
-<body>
+<body class="">
   <div class="container-fluid m-0 p-0">
     <!-- ----------------------- Navbar --------------------------- -->
     <header
-      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom bgradient">
+      class="d-flex flex-wrap align-items-center gap-3 justify-content-center justify-content-md-between py-3 mb-4 border-bottom bgradient">
       <a href="/"
         class="d-flex align-items-center text-center col-md-3 mb-2 ms-4 mb-md-0 text-dark text-decoration-none">
-        <img src="./HomeImg/80x80.png" class="bi me-2 rounded-circle" width="75px" alt="logo">
+        <img src="./HomeImg/80x80.png" class="bi rounded-circle" width="75px" alt="logo">
         <h5 class="px-3 text-warning font-nav fw-bold">WONDERS OF GUJARAT</h5>
       </a>
       <ul class="nav nav-pills col-12 col-md-auto justify-content-center mb-md-0 mb-3 mx-4">
@@ -33,14 +33,13 @@
       </div>
     </header>
     <!-- ---------------------- Content --------------------------- -->
-    <main>
-      <div class="carousel carousel-inner py-3">
-        <div class="carousel-item active">
+    <main class="">
+        <div class="position-relative">
+        <div style="z-index: -100;" class="w-100">
           <img class="bg-placeholder-img" width="100%" height="450px" src="./HomeImg/1350x525.png" alt="">
         </div>
 
-        <div class="container" height="">
-          <div class="carousel-caption align-top mb-3 pb-3 pt-0 h-md-50">
+          <div style="bottom: 0;position: absolute;" class="mb-3 p-3 text-center">
             <h3 class="py-1 d-none d-sm-block fst-italic fs-4">Welcome To</h3>
             <h3 class="display-6 text-uppercase shadow-sm text-col fw-bold py-2 mb-3 font-head">Wonders of Gujarat</h3>
             <p class="py-1 font-para text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non incidunt
@@ -48,10 +47,9 @@
               voluptatem? Quidem quo voluptatem amet expedita aliquam unde.</p>
           </div>
         </div>
-      </div>
     </main>
     <!-- ------------------------ footer -------------------------- -->
-    <footer class="footer text-center bg-footer text-dark mt-5">
+    <footer class="footer w-100 text-center bg-footer text-dark mt-5">
       <p class="m-0 py-2">Copyright&copy;2021</p>
     </footer>
   </div>
